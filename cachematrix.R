@@ -22,10 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
       get <- function() x
       
       ## sets the inverse of the matrix. 
-      setinverse <- function(inverse) a <<- solve(x)
+      setinverse <- function(inverse) invm <<- solve(x)
       
       ## this next line returns the value of the matrix just inverted.
-      getinverse <- function() a
+      getinverse <- function() invm
       
       ## returns a list of functions.
       list(set = set,
